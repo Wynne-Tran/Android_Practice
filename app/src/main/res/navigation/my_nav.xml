@@ -13,6 +13,10 @@
         <action
             android:id="@+id/action_homeFragment_to_dataFragment"
             app:destination="@id/dataFragment" />
+        <argument
+            android:name="itemid"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
     <fragment
         android:id="@+id/dataFragment"
@@ -24,5 +28,12 @@
             app:destination="@id/homeFragment"
             app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="true" />
+        <argument
+            android:name="dataId"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
+    <argument
+        android:name="itemid"
+        android:defaultValue="0" />
 </navigation>
